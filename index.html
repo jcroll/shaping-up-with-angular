@@ -3,8 +3,8 @@
     <head>
         <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.2.0-dist/css/bootstrap.min.css"/>
     </head>
-    <body>
-        <div ng-controller="StoreController as store">
+    <body ng-controller="StoreController as store">
+        <div ng-hide="store.product.soldOut">
             <h1> {{store.product.name}} </h1>
             <h2> ${{store.product.price}} </h2>
             <p> {{store.product.description}} </p>
